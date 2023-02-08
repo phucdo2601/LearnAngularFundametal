@@ -19,4 +19,9 @@ export class ProductListComponent implements OnInit {
 
   }
 
+  changeStarRating(message: string) {
+    console.log(`Message: ${message}`);
+    
+  }
+
 }
