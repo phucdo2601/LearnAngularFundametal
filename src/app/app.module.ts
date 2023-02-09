@@ -13,6 +13,7 @@ import { HighlightDirective } from './Directives/highlight.directive';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { GetDataComponent } from './get-data/get-data.component';
+import { PostDataComponent } from './post-data/post-data.component';
 
 @NgModule({
   declarations: [	
@@ -24,7 +25,8 @@ import { GetDataComponent } from './get-data/get-data.component';
       HighlightDirective,
       TemplateDrivenFormComponent,
       ReactiveFormComponent,
-      GetDataComponent
+      GetDataComponent,
+      PostDataComponent
    ],
   imports: [
     BrowserModule,

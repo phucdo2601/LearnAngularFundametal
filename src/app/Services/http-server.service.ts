@@ -33,4 +33,12 @@ export class HttpServerService {
     return this.httpClient.get<any>(url, this.httpOptions);
   }
 
+  public postCommentsd(payload: any): Observable<any> {
+
+    const url = `${this.REST_API_SERVER}/comments`;
+    console.log(url);
+    
+    return this.httpClient.post<any>(url, payload,this.httpOptions);
+  }
+
 }
