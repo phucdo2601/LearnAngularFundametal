@@ -1,5 +1,15 @@
-<h1>Hello World!</h1>
+<!-- <h1>Hello World!</h1>
 <h2>Welcome to Angular 12</h2>
 
 
-<app-home></app-home>
+<app-home></app-home> -->
+<h1>Angular Router App- Welcome Angular 15</h1>
+<!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
+<nav>
+  <ul>
+    <li><a routerLink="/first-component" routerLinkActive="active" ariaCurrentWhenActive="page">About Component</a></li>
+    <li><a routerLink="/second-component" routerLinkActive="active" ariaCurrentWhenActive="page">Home Component</a></li>
+  </ul>
+</nav>
+<!-- The routed views render in the <router-outlet>-->
+<router-outlet></router-outlet>
