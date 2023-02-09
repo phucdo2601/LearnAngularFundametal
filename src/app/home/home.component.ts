@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
     },
     {
       name: "grape",
-      price: 798797, 
+      price: 798797.12, 
       isDownSale: false,
     },
     {
