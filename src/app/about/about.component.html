@@ -1,4 +1,7 @@
-<p>about works!</p>
+<p appHighlight style="width: 200px;">about works!</p>
+<p [appHighlight]="myColor" style="width: 200px;">about works!</p>
+<p [appHighlight]="'orange'" style="width: 200px;">about works!</p>
+<!-- ngSwitch dc coi nhu  mot Structural Directive -->
 <ul [ngSwitch]="loginName">
     <li *ngSwitchCase="'user'">
         <p>User is logged in...</p>
