@@ -35,7 +35,7 @@
 
   </div> -->
   <br />
-  <table class="table">
+  <!-- <table class="table">
     <tr >
       <th>Index</th>
       <th>Fruit</th>
@@ -60,5 +60,25 @@
       </td>
     </tr>
     
-  </table>
+  </table> -->
+
+
+  <label for="cars">Tinh/ Thanh Pho:</label>
+  <select id="cars" (change)="changeCity($event)">
+    <option *ngFor="let item of listCities" [value]="item.city">
+      {{item.city}}
+    </option>
+    
+  </select>
+
+  <br />
+
+  <label for="cars">Quan/ Huyen:</label>
+  <select id="district">
+    <option *ngFor="let district of districts" value="{{ district }}">
+      {{ district }}
+    </option>
+  </select>
 </div>
+
+
