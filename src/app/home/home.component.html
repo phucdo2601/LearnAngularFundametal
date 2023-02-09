@@ -1,18 +1,30 @@
 <div class="test">
   <h1>This is component home</h1>
   <br />
-  <input type="text"  [(ngModel)]="name"/>
-  <h2>Hello {{name}}</h2>
-  
+  <!-- <input type="text"  [(ngModel)]="name"/>
+  <h2>Hello {{name}}</h2> -->
+
   <br />
   <!-- <input type="text"  [value]="name" title="This is {{name}}"/>
   <br />
   <input type="text"  [value]="name" [title]="'Day la' +name"/> -->
 
-
   <!-- <h2 *ngIf="age >= 30">You are elder</h2>
   <h2 *ngIf="age < 30">You are so young</h2> -->
 
-  <button (click)="resetName()">Reset Ten</button>
-</div>
+  <!-- <button (click)="resetName()">Reset Ten</button> -->
+  <input type="text" [(ngModel)]="age" />
+  <!-- <h2 *ngIf="age >= 30">You are elder</h2>
+  <h2 *ngIf="age < 30">You are so young</h2> -->
 
+  <h3>Tuoi ban la {{ age }}</h3>
+
+  <div *ngIf="age <= 18; then tre; else gia"></div>
+
+  <ng-template #tre>
+    <h2>You are so young!</h2>
+  </ng-template>
+  <ng-template #gia>
+    <h2>You are elder</h2>
+  </ng-template>
+</div>
