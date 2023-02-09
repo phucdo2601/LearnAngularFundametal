@@ -1,6 +1,26 @@
 .test {
-    border: 1px solid;
-    padding: 10px;
-    box-shadow: 5px 10px red;
-    width: 50%;
-  }
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px red;
+  width: 70%;
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+
+td, th{
+  min-width: 100px;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.right {
+  text-align: right;
+}
+
+.so-am {
+  color: red;
+}

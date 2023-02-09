@@ -30,10 +30,35 @@
 
   <h1>Fruits</h1>
 
-  <div *ngFor="let item of listFruit; let i =index">
+  <!-- <div *ngFor="let item of listFruit; let i =index">
     <li>{{item}} - {{i+1}}</li>
 
-  </div>
+  </div> -->
+  <br />
+  <table class="table">
+    <tr >
+      <th>Index</th>
+      <th>Fruit</th>
+      <th>Price</th>
+      <th>Down Sale</th>
+    </tr>
+    <tr *ngFor="let item of listFruit2; let i = index">
+      <td>{{i + 1}}</td>
+      <td>{{item.name}}</td>
+      <td class="right">
+        <span [ngClass]="{'so-am': item.price < 0 }">
+          {{ item.price }}
+        </span>
 
-  
+      </td>
+
+      <td>
+
+        <span *ngIf="item.isDownSale">
+          Hot Saling!
+        </span>
+      </td>
+    </tr>
+    
+  </table>
 </div>
