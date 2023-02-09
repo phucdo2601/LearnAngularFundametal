@@ -13,11 +13,11 @@
   <h2 *ngIf="age < 30">You are so young</h2> -->
 
   <!-- <button (click)="resetName()">Reset Ten</button> -->
-  <input type="text" [(ngModel)]="age" />
+  <!-- <input type="text" [(ngModel)]="age" /> -->
   <!-- <h2 *ngIf="age >= 30">You are elder</h2>
   <h2 *ngIf="age < 30">You are so young</h2> -->
 
-  <h3>Tuoi ban la {{ age }}</h3>
+  <!-- <h3>Tuoi ban la {{ age }}</h3>
 
   <div *ngIf="age <= 18; then tre; else gia"></div>
 
@@ -26,5 +26,14 @@
   </ng-template>
   <ng-template #gia>
     <h2>You are elder</h2>
-  </ng-template>
+  </ng-template> -->
+
+  <h1>Fruits</h1>
+
+  <div *ngFor="let item of listFruit; let i =index">
+    <li>{{item}} - {{i+1}}</li>
+
+  </div>
+
+  
 </div>
