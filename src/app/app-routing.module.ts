@@ -1,3 +1,4 @@
+import { GetDataComponent } from './get-data/get-data.component';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'templateForm', component: TemplateDrivenFormComponent },
   { path: 'reactiveForm', component: ReactiveFormComponent },
+  { path: 'getData', component: GetDataComponent },
   { path: '', component: HomeComponent },
   { path: '**', component: PageNotFoundComponent },  // Wildcard route for a 404 page
 ];
