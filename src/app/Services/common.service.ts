@@ -19,4 +19,9 @@ export class CommonService {
   public setCounter(n : number) : void {
     this.counter = n;
   }
+
+  public submitData(name: any) : void{
+    console.log("Gui data submission len server: DATA = ", name);
+    
+  }
 }
