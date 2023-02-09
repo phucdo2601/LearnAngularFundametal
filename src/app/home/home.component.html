@@ -3,8 +3,12 @@
   <h2>Hello {{name}}</h2>
   <input type="text"  value={{name}} />
   <br />
-  <input type="text"  [value]="name" title="This is {{name}}"/>
+  <!-- <input type="text"  [value]="name" title="This is {{name}}"/>
   <br />
-  <input type="text"  [value]="name" [title]="'Day la' +name"/>
+  <input type="text"  [value]="name" [title]="'Day la' +name"/> -->
+
+
+  <h2 *ngIf="age >= 30">You are elder</h2>
+  <h2 *ngIf="age < 30">You are so young</h2>
 </div>
 
