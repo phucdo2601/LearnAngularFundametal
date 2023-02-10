@@ -1,0 +1,9 @@
+<h1>This is parent component </h1>
+<h2>{{parentMessage}}</h2>
+<br />
+<button (click)="giveMoneyForChild()">Give money for child</button>
+<br/>
+<!-- ngoac tron : la tu ben ngoai vao ben trong; ngoac vuong tu ben trong ra ngoai -->
+<app-child #ChildPhuc name="Phuc Do" (childCall)="childGreeting($event)"></app-child>
+<br  />
+<app-child #ChildHoang name="Hoang" (childCall)="childGreeting($event)"></app-child>
