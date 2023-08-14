@@ -11,4 +11,10 @@ export class AppComponent {
 
   num1 = 10;
   num2 = 5;
+
+  IsVisible = true;
+
+  Onchange(args: any) {
+    this.IsVisible = args;
+  }
 }

@@ -1,9 +1,27 @@
 This is my first Angular application v16
 
-<div *ngIf="num1 > num2">
-    This is {{title}}
+<hr>
+
+<input type="radio" name="radio1" (click)="Onchange(true)">True
+<input type="radio" name="radio1" (click)="Onchange(false)">False
+
+<hr>
+<div *ngIf="IsVisible ; then thenBlock ; else elseBlock">
+
 </div>
 
-<p [hidden]="!visible">
-    This is dotnet office
-</p>
+<!-- <div *ngIf="IsVisible">
+    This is True Radio button!
+</div>
+
+<div *ngIf="!IsVisible">
+    This is False Radio button!
+</div> -->
+
+<ng-template #thenBlock>
+    This is True Radio button CLICKED! --then block
+</ng-template>
+
+<ng-template #elseBlock>
+    This is False Radio button CLICKED! --else block
+</ng-template>
