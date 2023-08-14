@@ -17,4 +17,11 @@ export class AppComponent {
   Onchange(args: any) {
     this.IsVisible = args;
   }
+
+  public color = '';
+
+  SetColor(colorVal: any) {
+    this.color = colorVal.target.value;
+  }
+
 }
