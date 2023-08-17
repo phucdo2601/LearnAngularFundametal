@@ -22,6 +22,13 @@ builder.Services.AddDbContext<DatabaseContext>(
 //Configure Unit of work for using repository
 builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
 
+//enable CORS for calling API of outside platform
+builder.Services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+{
+    builder.AllowAnyOrigin()
+        .AllowAnyHeader().AllowAnyMethod();
+}));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -36,5 +43,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseCors("MyPolicy");
 
 app.Run();
